@@ -1,0 +1,32 @@
+
+//Pseint   Calculo IMC usando funcion
+
+Funcion resultado=imc(peso,talla)
+	resultado=peso/talla^2
+	
+FinFuncion
+
+Funcion Obeso(calcular)
+	Si calcular>30 entonces 
+		Escribir "Ud. esta obeso"
+	SiNo
+		si calcular>25 entonces 
+			Escribir "Ud. tiene sobrepeso"
+		SiNo
+			si calcular>20 entonces 
+				Escribir "Ud. tiene peso normal"
+			SiNo
+				Escribir "Ud. esta con bajo peso"
+			FinSi
+		FinSi
+	FinSi
+FinFuncion
+
+
+Algoritmo IMC_Funcion
+	Leer peso
+	Leer talla
+    calcular=imc(peso,talla)
+	escribir calcular
+	obeso(calcular)	
+FinAlgoritmo
